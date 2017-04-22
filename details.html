@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link rel="stylesheet" href="styling/styles.css">
+<link href="styling/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="movieApp.js"></script>
+</head>
+
+
+<body class="bg">
+<main class="container">
+<div class="row centered">
+   <div class="col-md-12">
+  <h1 class="header">The Movie Dictionary</h1>
+</div>
+  </div>
+  <br>
+</div>
+
+<article class="row">
+<section class="col-xs-4" id="poster" >
+  <!-- <img id="poster" src="poster.jpg" alt="movie poster" class="img-responsive poster-img"> -->
+</section>
+
+
+<div class="col-xs-8">
+
+    <!-- NOTE: movie title -->
+  <div class="row">
+    <div class="col-xs-12" id="movieTitle">
+      <!-- <h2>Movie1</h2> -->
+    </div>
+  </div>
+
+<!-- NOTE: details -->
+<div class="row">
+  <div class="col-xs-4" id="releaseDate">
+    <p class="subtitle">Release Date</p>
+    <!-- <p>4 April</p> -->
+  </div>
+  <div class="col-xs-4" id="movieRateing">
+    <p class="subtitle">Rating</p>
+    <!-- <p>5</p> -->
+  </div>
+  <div class="col-xs-4" id="movieRuntime">
+    <p class="subtitle">Runtime</p>
+    <!-- <p>50 mins</p> -->
+  </div>
+</div>
+
+
+ <!-- NOTE: overview -->
+ <div class="row">
+
+   <div class="col-xs-12" id="overView">
+  <p class="subtitle">Overview:</p>
+   </div>
+ </div>
+
+<div class="row">
+   <div class="col-xs-6">
+      <!-- NOTE: Trailer button -->
+  <button  id ="trailerbtn" type="button" class="btn btn-primary btn-lg dButtons" data-toggle="modal" data-target="#myModal" name="button">Trailer</button>
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Trailers</h4>
+      </div>
+      <div class="modal-body">
+        <ul id="trailersList">
+
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   </div>
+
+   <div class="col-xs-6">
+    <!-- NOTE: Reviews Button -->
+<button id ="reviewbtn" type="button" class="btn btn-primary btn-lg dButtons" data-toggle="modal" data-target="#myModal1" name="button">Reviews</button>
+<div id="myModal1" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+  <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Reviews</h4>
+    </div>
+    <div class="modal-body">
+      <ul id="reviewList">
+
+        </ul>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+   </div>
+ </div>
+
+
+
+</div>
+</article>
+</main>
+</body>
+
+
+</html>
+<script>
+  loadDetailsPage();
+</script>
+
+
+
+

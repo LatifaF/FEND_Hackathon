@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link rel="stylesheet" href="styling/styles.css">
+<link href="styling/bootstrap.min.css" rel="stylesheet" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="movieApp.js"></script>
+<title>Home</title>
+
+
+
+</head>
+
+
+<body class="bg">
+  <main class="container">
+
+
+
+  <div class="row centered">
+    <div class="col-md-12">
+  <h1 class="header">The Movie Dictionary</h1>
+</div>
+  </div>
+  <br>
+
+<section class="row centered  tabs">
+  <div class="col-md-12">
+  <ul class="nav nav-pills nav-justified">
+    <li class="active tab"><a id="MostPopular" data-toggle="tab" href="#home">Most popular</a></li>
+    <li class="tab"><a data-toggle="tab" id="topRated" href="#menu1">Top Rated</a></li>
+
+  </ul>
+  <!--
+  <button type="button" class="btn btn-primary" name="button">Most Popular</button>
+  <button type="button" class="btn btn-primary btns" name="button">Top rated</button>
+</div>-->
+</section>
+
+
+<div class="movies" id="movies">
+<!-- <div  class="row"></div>
+ -->
+
+ </div>
+
+  </main>
+</body>
+
+
+</html>
+<script>
+  LoadData();
+</script>

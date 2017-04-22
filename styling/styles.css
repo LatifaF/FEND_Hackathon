@@ -1,0 +1,59 @@
+* {
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+color: white;
+
+}
+
+.header {
+font-family: 'Monoton', cursive; }
+
+
+.movies {
+    overflow: scroll;
+}
+
+.bg {
+background-color: #37474F;}
+
+.container {
+margin-top: 2%;
+}
+
+.tabs {
+    margin-bottom: 2%;
+}
+
+.centered {
+text-align: center;}
+
+
+.btns {
+margin-left: 2%;
+}
+
+
+.poster-img {
+margin-top: 5%;}
+
+
+.moviesRow {
+
+margin-bottom: .8%; }
+
+hover:.tab {
+color: white; }
+
+.dButtons {
+width: 100%;
+}
+
+
+.subtitle {
+font-weight: bold;
+font-size: 18px;
+color: #B0BEC5; }
+
+p {
+    font-size: 16px;
+}
