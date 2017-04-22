@@ -172,7 +172,7 @@ function loadMovieDetails()
 function loadMoviesTrailars()
 {$("#trailersList").empty();
   for (var i = 0; i< movieTra.length; i++) {
-    $("#trailersList").append("<li><a href='https://www.youtube.com/watch?v="+ movieTra[i].key+"'>"+movieTra[i].name+"</a></li>")
+    $("#trailersList").append("<li><a href='https://www.youtube.com/watch?v="+ movieTra[i].key+"'>"+movieTra[i].name+"</a><hr></li>")
   }
 
 }
@@ -180,7 +180,8 @@ function loadMoviesTrailars()
 function loadMoviesReviews()
 {$("#reviewList").empty();
   for (var i = 0; i< movieReviewList.length; i++) {
-    $("#reviewList").append("<li><p>"+movieReviewList[i].content+"</p><p>By: "+movieReviewList[i].author+"</p></li>")
+    $("#reviewList").append("<li><p class='review'>"+movieReviewList[i].content+"</p><p class='review'>By: "+movieReviewList[i].author+"</p><hr></li>")
+
   }
 
 }
